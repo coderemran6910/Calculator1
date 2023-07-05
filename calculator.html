@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <form action="" id="mainCalculator">
+
+    <span id="C-title">Dveloper: </span><span id="ttlrNam">coder emran </span>
+        <input type="text" id="resultInput" disabled >
+        <hr>
+        <input type="button" value="&radic;" onclick="mainCalculator.resultInput.value= Math.sqrt(mainCalculator.resultInput.value)">
+        <input type="button" value="CE" onclick="mainCalculator.resultInput.value=' ';">
+        <input type="button" value="C" onclick="mainCalculator.resultInput.value=' ';">
+        <input type="button" value="&larr;" onclick="mainCalculator.resultInput.value= mainCalculator.resultInput.value.slice(0,-1) "><br>
+
+        
+    
+        <input type="button" value="7" onclick="mainCalculator.resultInput.value +='7'">
+        <input type="button" value="8"  onclick="mainCalculator.resultInput.value +='8'">
+        <input type="button" value="9"  onclick="mainCalculator.resultInput.value +='9'">
+        <input type="button" value="+"onclick="mainCalculator.resultInput.value +='+'">
+        <br>
+
+
+        <input type="button" value="4"  onclick="mainCalculator.resultInput.value +='4'">
+        <input type="button" value="5"  onclick="mainCalculator.resultInput.value +='5'">
+        <input type="button" value="6"  onclick="mainCalculator.resultInput.value +='6'">
+        <input type="button" value="-"  onclick="mainCalculator.resultInput.value +='-'"><br>
+
+        <input type="button" value="1" onclick="mainCalculator.resultInput.value +='1'">
+        <input type="button" value="2" onclick="mainCalculator.resultInput.value +='2'">
+        <input type="button" value="3" onclick="mainCalculator.resultInput.value +='3'">
+        <input type="button" value="*" onclick="mainCalculator.resultInput.value +='*'"><br>
+
+        <input type="button" value="0" onclick="mainCalculator.resultInput.value +='0'">
+        <input type="button" value="." onclick="mainCalculator.resultInput.value +='.'">
+        <input type="button" value="=" onclick="mainCalculator.resultInput.value = eval(mainCalculator.resultInput.value)">
+        <input type="button" value="/" onclick="mainCalculator.resultInput.value +='/'"><br>
+
+
+    </form>
+    
+
+    <script src="calculator.js"></script>
+</body>
+</html>
